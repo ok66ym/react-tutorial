@@ -56,6 +56,7 @@ body {
   padding: 0;
 }
 
+/* App.jsのsquareコンポーネントのスタイル。 */
 .square {
   background: #fff;
   border: 1px solid #999;
@@ -72,9 +73,9 @@ body {
 }
 
 .board-row:after {
-  clear: both;
-  content: '';
-  display: table;
+  clear: both; /*floatをリセット*/
+  content: ''; /*空の要素*/
+  display: table; /*擬似要素をブロック要素として扱う*/
 }
 
 .status {
